@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.Scanner;
+    
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        Scanner sc=new Scanner();
+        int N=sc.nextInt();
+        int f,i;
+        f=1;
+        fact(n);
+        int fact(int n)
+        {
+        if(n>0)
+        {
+        return(f*fact(N-1));
+        }
+       }
+        
+    }
+}
