@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.io.*;
+class TestClass 
+{
+    public static void main(String args[]) throws Exception
+    {
+     Scanner sc = new Scanner(System.in);
+     String S = sc.next();
+     String reverse = "";
+     for(int i=S.length()-1;i>=0;i--)
+     {
+      reverse=reverse+S.charAt(i);
+      //System.out.println("loop: "+reverse);
+     }
+     //System.out.println("S: "+ S);
+     //System.out.println("reverse: "+reverse);
+     if(S.compareTo(reverse)==0)
+     {
+        System.out.println("YES");
+     }
+     else
+     {
+        System.out.println("NO");
+     }
+    }
+}
