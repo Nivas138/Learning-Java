@@ -14,28 +14,29 @@ public class charsort {
     {
         String s="SOPANASUNDARI";
         int key,j;
-        int arr[]=new int[s.length()];
-        for(int i=0;i<s.length();i++)
+        //int arr[]=new int[s.length()];
+        char[] c=s.toCharArray();
+        for(int i=1;i<s.length();i++)
         {
-        char c=s.charAt(i);
-        int asci=(int)c;
-        arr[i]=c;
-        }
-        for(int i=1;i<arr.length;i++)
-        {
-           key=arr[i];
+        
+        //int asci=(int)c;
+        //arr[i]=c;
+        //}
+        //for(int i=1;i<arr.length;i++)
+        //{
+           key=c[i];//arr[i];
            j=i-1;
-           while(j>=0&&arr[j]>key)
+           while(j>=0&&c[j]>key)
            {
-               arr[j+1]=arr[j];
+               c[j+1]=c[j];
                j=j-1;
            }
-           arr[j+1]=key;
+           c[j+1]=(char)key;
         }
-        for(int i=0;i<arr.length;i++)
+        for(int i=0;i<c.length;i++)
         {
-            char asc=(char)arr[i];
-            System.out.print(asc+" ");
+            //char asc=(char)arr[i];
+            System.out.print(c[i]+" ");
         }
     }
     
